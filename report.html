@@ -13504,7 +13504,7 @@ Make sure to keep track of the various features and conditions you tried before 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[90]:</div>
+<div class="prompt input_prompt">In&nbsp;[96]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">print</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">outcomes</span><span class="p">,</span> <span class="n">predictions</span><span class="p">)</span>
@@ -13528,6 +13528,20 @@ Make sure to keep track of the various features and conditions you tried before 
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Features looked at: Gender, Age, Pclass (see code comments for exact graphing commands)</p>
+<p>Feature most informative: Gender</p>
+<p>Age was second most important feature, then Pclass was the least</p>
+<p>Since age was the largest, split on that first, then split on Age, and then used pclass to make finer cuts in the data to get above 80%</p>
+<p>Approach was to use different age and pclass cuts, identifying the areas where I could improve over the baseline assumption (older males didn't survive, females and children did)</p>
+
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
